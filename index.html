@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Soeun Kimsong</title>
+    <link rel="icon" href="">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='media.css'>
+    <script src='script.js' defer></script>
+    <script src="https://kit.fontawesome.com/e9df768d2a.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- loading screen -->
+    <div id="loading">
+        <div class="loading-container">
+            <span class="sign">&lt;</span>div <span class="attr">id = <span class="value">"screen"</span></span><span
+                class="sign">&gt;</span>
+            <div class="text">
+                <p>loading
+                    <span class="load-dot"></span><span class="cursor">|</span>
+                </p>
+            </div>
+            <span class="sign">&lt;</span>/div<span class="sign">&gt;</span>
+        </div>
+    </div>
+
+
+    <!-- navigation -->
+    <nav>
+        <div class="logo">
+            <div class="logo-image">
+                <img src="images/mylogo.png" alt="logo">
+            </div>
+            <div class="title">My Portfolio</div>
+        </div>
+
+        <div class="nav-toggle">
+            <div class="tag">
+                <span class="sign">&lt;</span><i class="fas fa-bars"></i><span class="sign">&gt;</span>
+            </div>
+        </div>
+
+        <ul class="nav-link">
+            <li class="home active" style="--n:1">
+                <a href="#home">
+                    <span class="sign">&lt;</span>Home<span class="sign">&gt;</span>
+                </a>
+                <div class="navhover">
+                    <div class="text">
+                        <p>Home Page</p>
+                    </div>
+                    <span class="sign">&lt;</span>/Home<span class="sign">&gt;</span>
+                </div>
+            </li>
+            <li class="about" style="--n:2">
+                <a href="#about">
+                    <span class="sign">&lt;</span>About<span class="sign">&gt;</span>
+                </a>
+                <div class="navhover">
+                    <div class="text">
+                        <p>About Myself</p>
+                    </div>
+                    <span class="sign">&lt;</span>/About<span class="sign">&gt;</span>
+                </div>
+            </li>
+            <li class="experience" style="--n:3">
+                <a href="#experience">
+                    <span class="sign">&lt;</span>Experience<span class="sign">&gt;</span>
+                </a>
+                <div class="navhover">
+                    <div class="text">
+                        <p>Work Experience</p>
+                    </div>
+                    <span class="sign">&lt;</span>/Experience<span class="sign">&gt;</span>
+                </div>
+            </li>
+            <li class="project" style="--n:4">
+                <a href="#project">
+                    <span class="sign">&lt;</span>Project<span class="sign">&gt;</span>
+                </a>
+                <div class="navhover">
+                    <div class="text">
+                        <p>My Project</p>
+                    </div>
+                    <span class="sign">&lt;</span>/Project<span class="sign">&gt;</span>
+                </div>
+            </li>
+            <li class="contact" style="--n:5">
+                <a href="#contact">
+                    <span class="sign">&lt;</span>Contact<span class="sign">&gt;</span>
+                </a>
+                <div class="navhover">
+                    <div class="text">
+                        <p><span class="tab"></span>Contact Me</p>
+                    </div>
+                    <span class="sign">&lt;</span>/Contact<span class="sign">&gt;</span>
+                </div>
+            </li>
+            <img src="images/mouse.png" alt="mouse" class="mouse">
+        </ul>
+    </nav>
+
+    <!-- change theme -->
+
+    <div class="theme-container">
+        <div class="moon">
+            <img src="images/moon.png" class="moon" alt="">
+        </div>
+        <div class="sun"></div>
+    </div>
+    <div class="theme-setting">
+        <h3>
+            <span class="sign">&lt;</span>Theme<span class="sign">&gt;</span>
+        </h3>
+        <div class="text">
+            <div class="dark-theme active">
+                <i class="fas fa-moon"></i> Dark Theme
+            </div>
+            <div class="light-theme">
+                <i class="fas fa-sun"></i> light Theme
+            </div>
+        </div>
+        <h3>
+            <span class="sign">&lt;</span>/Theme<span class="sign">&gt;</span>
+        </h3>
+    </div>
+
+
+    <!-- main content -->
+    <main>
+        <!-- home -->
+        <section id="home">
+            <div class="tag">
+                <span class="sign">&lt;</span>Home<span class="sign">&gt;</span>
+            </div>
+
+            <div class="in-tag">
+                <!-- photo -->
+                <div class="image">
+                    <div id="service">
+                        <p><i class="fas fa-wifi"></i><i class="fas fa-signal"></i><i class="fas fa-battery"></i></p>
+                    </div>
+                    <div id="datetime">
+                        <div id="time"></div>
+                        <div id="date"></div>
+                    </div>
+                    <div id="button"></div>
+                    <img src="images/mylogo.png" id="app">
+                    <img src="images/i1.png" alt="photo" id="myphoto" class="close">
+                </div>
+
+                <!-- content -->
+                <div class="content">
+
+                    <div class="image">
+                        <div id="datetime">
+                            <div id="time"></div>
+                            <div id="date"></div>
+                        </div>
+                        <div id="button"></div>
+                        <img src="images/mylogo.png" id="app">
+                        <img src="images/i1.png" alt="photo" id="myphoto" class="close">
+                    </div>
+
+                    <div class="toptext">
+                        <span class="greet"></span>,
+                        <span class="name-is">my name is</span>
+                    </div>
+
+                    <div class="name-container">
+                        <div class="cursor">
+                            <div class="img-w-name">
+                                <img src="images/programmer.png" alt="programmer">
+                            </div>
+                            <img src="images/latte.png" alt="latte" class="coffee">
+                        </div>
+
+                        <div class="myname">
+                            <h1 class="name">Soeun</h1>
+                            <h1 class="name">Kimsong</h1>
+                        </div>
+                    </div>
+
+
+                    <div class="para">
+                        I'm a potential
+                        <span class="myjob"></span><span class="cursorSign">|</span>.
+                        I am always striving to learn more in the tech field to further my career path. It's a great
+                        pleasure meeting you.
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tag">
+                <span class="sign">&lt;</span>/Home<span class="sign">&gt;</span>
+            </div>
+
+        </section>
+
+        <!-- about -->
+        <section id="about">
+            <div class="tag">
+                <span class="sign">&lt;</span>About<span class="sign">&gt;</span>
+            </div>
+
+            <div class="in-tag">
+                <div class="aboutme">
+                    <div class="content">
+                        <p>Hello! my name is <span class="hl">Soeun Kimsong</span>. I'm a self-taught
+                            <span class="hl">Software Developer</span>. My love for technology inspires me to
+                            join the tech industry to contribute in amazing projects that can be useful and can
+                            change the society for better development.
+                        </p>
+                        <p>
+                            As a self-taught developer, I spend most of my time researching and practicing to improve my
+                            skill
+                            in android development. Now, my dedication to the field has enabled me to have a strong
+                            foundation of understanding
+                            the android development field. I am always eager to take on new challenges and push the
+                            boundaries of what is possible to achieve my goals.
+                        </p>
+
+                    </div>
+                    <div class="image">
+                        <div class="border1 border"></div>
+                        <div class="border2 border"></div>
+                    </div>
+                </div>
+
+                <div class="myskill">
+                    <div class="myskill-top">
+                        <div class="android">
+                            <div class="title">My Skill</div>
+                            <div class="status">
+                                <div class="num"><i class="fab fa-android"></i></div>
+                            </div>
+                        </div>
+                        <div class="describe">
+                            <p>I have built several small projects for a while, so I'm sure I have a strong foundation
+                                in it.
+                                I am more proficient in Kotlin because of its concise syntax, null safety, and a few
+                                more advantages that makes me love this language.
+                                I have also experienced with some of modern Android development tools and technologies
+                                that helps in building the app with ease.</p>
+                        </div>
+                    </div>
+                    <div class="myskill-bottom">
+
+                        <ul class="skill">
+                            <li id="graph">
+                                <h3>100%</h3>
+                                <h3>Skill</h3>
+                            </li>
+                            <li>
+                                <div class="scalebar">
+                                    <div class="progress"></div>
+                                    <div class="max" style="height: calc(100% - 60%);"></div>
+                                </div>
+                                <div class="language">Android</div>
+                            </li>
+                            <li>
+                                <div class="scalebar">
+                                    <div class="progress"></div>
+                                    <div class="max" style="height: calc(100% - 70%);"></div>
+                                </div>
+                                <div class="language">Kotlin</div>
+                            </li>
+                            <li>
+                                <div class="scalebar">
+                                    <div class="progress"></div>
+                                    <div class="max" style="height: calc(100% - 60%);"></div>
+                                </div>
+                                <div class="language">Java</div>
+                            </li>
+                            <li>
+                                <div class="scalebar">
+                                    <div class="progress"></div>
+                                    <div class="max" style="height: calc(100% - 50%);"></div>
+                                </div>
+                                <div class="language">C++</div>
+                            </li>
+                            <li>
+                                <div class="scalebar">
+                                    <div class="progress"></div>
+                                    <div class="max" style="height: calc(100% - 60%);"></div>
+                                </div>
+                                <div class="language">Web</div>
+                            </li>
+                        </ul>
+                        <div class="slideshow">
+                            <div class="row" id="row1"></div>
+                            <div class="row" id="row2"></div>
+                            <div class="border border2"></div>
+                            <div class="border border1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tag">
+                <span class="sign">&lt;</span>/About<span class="sign">&gt;</span>
+            </div>
+        </section>
+
+        <!-- experience -->
+        <section id="experience">
+            <div class="tag">
+                <span class="sign">&lt;</span>Experience<span class="sign">&gt;</span>
+            </div>
+
+            <div class="in-tag">
+                <div class="image">
+                    <div class="language" id="kotlin">
+                        <img src="images/kotlin.png" alt="kotlin logo">
+                    </div>
+                    <div class="language" id="android">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <div class="language" id="androidstudio">
+                        <img src="images/androidstudio.png" alt="androidstudio logo">
+                    </div>
+                </div>
+                <div class="experience-text">
+                    <p>Even though I may not have the experience that some of the other candidates have, with my
+                        self-learning abilities, I am confident that
+                        I can improve my skills and abilities to reach my full potential.
+                </div>
+            </div>
+
+            <div class="tag">
+                <span class="sign">&lt;</span>/Experience<span class="sign">&gt;</span>
+            </div>
+        </section>
+
+        <!-- project -->
+        <section id="project">
+            <div class="tag">
+                <span class="sign">&lt;</span>Project<span class="sign">&gt;</span>
+            </div>
+
+            <div class="in-tag">
+                <div class="app">
+                    <div class="app-info">
+                        <div id="app-logo">
+                            <img src="images/ic_launcher.png" alt="app logo">
+                        </div>
+                        <div id="app-name">
+                            <h2>Tech Report</h2>
+                            <p>(Android) App for getting global Tech News</p>
+                        </div>
+                        <div id="download">
+                            <a href="app/tech_report.apk">
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="app-describe">
+                        <h3>Description</h3>
+                        <p>Tech Report is my personal project that I built for personal use and for learning purpose. It is
+                            an app that provides news only about technology around the world.
+                            I have added some features such as saving articles, following sources, customize our own
+                            topics, and more. This app uses News API for getting the articles
+                            and other technologies or tools along the way in the development.</p>
+                    </div>
+                    <div class="app-preview">
+                        <div class="img">
+                            <img src="images/headline.png" alt="app photo">
+                            <h5>Get Headlines and Latest News About Tech</h5>
+                        </div>
+                        <div class="img">
+                            <img src="images/foryou.png" alt="app photo">
+                            <h5>You can Search and Follow For More News</h5>
+                        </div>
+                        <div class="img">
+                            <img src="images/save-news.png" alt="app photo">
+                            <h5>Save the interesting ones for later read</h5>
+                        </div>
+                        <div class="img">
+                            <img src="images/sidebar.png" alt="app photo">
+                            <h5>Customize Your Own Topic, Set Notification and More</h5>
+                        </div>
+                        <div class="img">
+                            <img src="images/darkmode.png" alt="app photo">
+                            <h5>Beautiful and responsive UI for Mobiles and Tablets</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tag">
+                <span class="sign">&lt;</span>/Project<span class="sign">&gt;</span>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section id="contact">
+            <div class="tag">
+                <span class="sign">&lt;</span>Contact<span class="sign">&gt;</span>
+            </div>
+
+            <div class="in-tag">
+                <div class="contactInfo">
+                    <p class="title">Contact me anytime</p>
+                    <p>Feel free to get in touch and discuss with me. I'm available to help you with
+                        the best I got while I'm in my comfortable office coding and looking at the beautiful sky.</p>
+                    <ul class="address">
+                        <li>
+                            <i class="fas fa-location-dot"></i>
+                            <p>Phnom Penh, Cambodia</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div class="clipboard">
+                                <input type="text" value="017 402 301">
+                                <button><i class="far fa-clipboard"></i></button>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div class="clipboard">
+                                <input type="text" value="kimsong715@gmail.com">
+                                <button><i class="far fa-clipboard"></i></button>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="social-media">
+                        <li>
+                            <a href="https://www.facebook.com/lee.chunji.715" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/kim_songular/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/soeun_kimsong" target="_blank">
+                                <i class="fas fa-paper-plane"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/SoeunKimsong" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="image">
+                    <img src="images/myroom.png" alt="room">
+                </div>
+                <div class="star">
+                    <img src="images/shooting-star.png" alt="shooting star">
+                </div>
+
+            </div>
+
+            <div class="tag">
+                <span class="sign">&lt;</span>/Contact<span class="sign">&gt;</span>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="para">
+                <p>This is my personal website developed by myself with just pure HTML, CSS and JavaScript. This is all
+                    about me.
+                    Hope we can have a great cooperation together.</p>
+                <p>Have a great day Sir/Madam!!</p>
+            </div>
+            <div class="copyright">
+                <div class="github">
+                    <a href="https://github.com"><i class="fab fa-github"></i></a>
+                    <p>This style is inspired by <a href="https://github.com">GitHub's</a> code editor theme.</p>
+                </div>
+                <div class="flaticon">
+                    <a href="https://www.flaticon.com"><img src="images/flaticon.png" alt=""></a>
+                    <p>Credits to <a href="https://www.flaticon.com">Flaticon</a> and the designers there for beautiful
+                        and
+                        free icons.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="line">
+            <img src="images/latte.png" alt="">
+        </div>
+    </footer>
+
+    <script>
+        // loading screen
+        let loadDot = document.querySelector('#loading .load-dot')
+        let dot = "....";
+
+        function loading() {
+            i = 0;
+            deleting = false;
+            function type() {
+                if (!deleting) loadDot.innerHTML = dot.substring(0, ++i);
+                if (deleting) loadDot.innerHTML = dot.substring(0, --i);
+
+                if (!deleting && i == dot.length) deleting = true;
+                if (deleting && i == 0) deleting = false;
+
+                setTimeout(type, 300);
+            }
+            type();
+        }
+
+        loading();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+/* tablet */
+@media screen and (max-width: 1075px) {
+    #home .image{
+        display: none;
+    }
+    #home .in-tag{
+        padding: 40px 0;
+    }
+    #home .in-tag .content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 30px;
+    }
+    #home .content .cursor{
+        display: none;
+    }
+    #home .content .image{
+        display: flex;
+        grid-row: span 2;
+        width: 25vh;
+        height: 50vh;
+        margin: auto;
+    }
+    #home .name-container{
+        margin: 0;
+    }
+    #home .para{
+        grid-column: span 2;
+        padding-left: 40px;
+    }
+
+    #about .myskill-top{
+        flex-direction: column;
+    }
+    #about .myskill-top .describe{
+        width: 0%;
+    }
+    #about .myskill.click .myskill-top .describe{
+        width: 80%;
+    }
+    #about .myskill-top .describe p{
+        width: 500px;
+        max-height: 0;
+        transition: var(--transition);
+        transition-delay: .5s;
+    }
+    #about .myskill.click .myskill-top .describe p{
+        max-height: 5000px;
+    }
+
+    #about .myskill-bottom{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    #about .myskill-bottom .skill{
+        width: 90%;
+    }
+    #about .myskill-bottom .slideshow{
+        width: 90%;
+    }
+
+    #experience .in-tag{
+        flex-direction: column;
+    }
+    #experience .in-tag .image{
+        width: 80%;
+    }
+    #experience .in-tag .experience-text{
+        width: 100%;
+        padding: 40px;
+    }
+
+
+
+    #contact .in-tag{
+        flex-direction: column;
+        gap: 20px;
+    }
+    #contact .image, #contact .contactInfo{
+        width: 90%;
+    }
+    #contact .image img{
+        max-width: none;
+    }
+}
+
+
+
+/* mobile phone */
+@media screen and (max-width: 800px) {
+    *{
+        font-size: .93em;
+    }
+    .mouse{
+        display: none;
+    }
+
+    nav{
+        justify-content: space-between;
+    }
+    nav .nav-toggle{
+        display: grid;
+        cursor: pointer;
+    }
+    nav .nav-link{
+        position: absolute;
+        flex-direction: column;
+        height: auto;
+        bottom: 0%;
+        right: 0;
+    }
+    nav .nav-link li{
+        position: absolute;
+        background-color: var(--black);
+        opacity: 1;
+        top: calc(50px * (var(--n) - 1));
+        right: -100px;
+        z-index: 200;
+        transition: var(--transition);
+        transform: rotateX(90deg);
+        transition-delay: calc(var(--n) * 0.1s);
+        box-shadow: 0 0 5px var(--blue2);
+    }
+    nav .nav-link li a{
+        display: block;
+        width: 120px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+    }
+    nav .nav-link.show li{
+        right: 0%;
+        transform: rotateX(0);
+    }
+    nav li:hover .navhover{
+        display: none;
+    }
+
+    main{
+        padding: 0 20px;
+    }
+
+    .star{
+        width: 20px;
+    }
+
+    .theme-container .moon, .theme-container .sun{
+        width: 60px;
+        height: 60px;
+    }
+    .theme-container{
+        top: 50px;
+    }
+
+    #home .in-tag .content{
+        gap: 10px;
+    }
+    #home .in-tag .content{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    #home .content .toptext{
+        width: max-content;
+        margin: auto;
+        font-size: 0.8em;
+    }
+    #home .content .myname{
+        font-size: 1em;
+    }
+    #home .content .para{
+        order: 4;
+        margin-top: 30px;
+        font-size: 0.95em;
+        padding-left: 20px;
+    }
+    #home .content .image{
+        order: 3;
+    }
+
+    #about .aboutme{
+        flex-direction: column;
+        padding: 30px 0;
+    }
+    #about .content, #about .image{
+        width: 80%;
+    }
+    
+    #about .myskill{
+        width: 90%;
+        margin: 20px auto;
+    }
+    #about .myskill-top{
+        width: 100%;
+    }
+    #about .myskill-top .describe{
+        margin-top: 0;
+    }
+    #about .myskill-top .describe p{
+        width: 220px;
+        margin-right: auto;
+    }
+
+    #about .myskill-bottom .skill{
+        width: 100%;
+        margin-right: 0;
+    }
+    #about .myskill-bottom .skill li{
+        height: 100px;
+    }
+    #about .myskill-bottom .scalebar{
+        width: 10px;
+    }
+
+    #about .myskill-bottom .slideshow{
+        padding: 10px;
+    }
+    #about .myskill-bottom .row{
+        height: 20px;
+    }
+    #about .myskill-bottom .row span{
+        font-size: .4rem;
+    }
+    #about .myskill-bottom #row1 span, #about .myskill-bottom #row2 span{
+        animation-duration: 6s;
+    }
+
+
+    #experience .image{
+        height: 250px;
+    }
+    #experience .image .language{
+        width: 100px;
+        height: 100px;
+    }
+    #experience .image #android i{
+        font-size: 3rem;
+    }
+    #experience .image #kotlin {
+        padding: 20px;
+    }
+
+    #project .app{
+        margin: 0;
+    }
+    #project .app-info{
+        flex-wrap: wrap;
+    }
+    #project .app-info #app-logo{
+        width: 20%;
+    }
+    #project .app-info #app-name{
+        width: 80%;
+    }
+    #project #download{
+        width: 120px;
+        margin-right: 0;
+        padding: 10px;
+    }
+    #project #download a{
+        height: 30px;
+        line-height: 30px;
+    }
+    #project #download a::before, #project #download a i{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #project #app-describe{
+        margin: 1rem 0;
+    }
+    #project .app-preview .img{
+        padding: 10px;
+        min-width: 150px;
+    }
+    #project .app-preview .img img{
+        max-height: 200px;
+    }
+
+
+    footer .footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    footer .para{
+        width: 90%;
+    }
+    footer .logo{
+        grid-row: span 2;
+    }
+}
+
