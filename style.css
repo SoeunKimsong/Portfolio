@@ -7,7 +7,7 @@
 
 :root{
     --background: rgb(10, 13, 16);
-    --background-gradient: linear-gradient(to top right, rgb(6, 23, 49), rgb(2, 2, 39), #131313);
+    --background-gradient: linear-gradient(to top right, rgb(6, 23, 49), rgb(2, 2, 39), #01021b);
     --black: rgb(16, 16, 16);
     --white: #e2e2e2;
     --green: rgb(108,231,121);
@@ -70,7 +70,22 @@ body::-webkit-scrollbar-thumb{
 img{
     width: 100%;
 }
-
+.bg-shape{
+    position: fixed;
+    width: 100vh;
+    height: 100vh;
+    top: 20%;
+    z-index: -1000;
+    -webkit-filter: blur(100px);
+}
+.bg-shape2{
+    position: fixed;
+    width: 100vh;
+    height: 100vh;
+    left: 50%;
+    z-index: -1000;
+    -webkit-filter: blur(100px);
+}
 
 /* loading screen */
 
@@ -1100,7 +1115,7 @@ section{
 #project .app-preview::-webkit-scrollbar{
     background-color: var(--blue3);
     border-radius: 15px;
-    height: 5px;
+    height: 10px;
 }
 #project .app-preview::-webkit-scrollbar-thumb{
     background-color: var(--gray2);
