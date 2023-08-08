@@ -7,8 +7,8 @@
 
 :root{
     --background: rgb(10, 13, 16);
-    --background-gradient: linear-gradient(to top right, rgb(6, 23, 49), rgb(2, 2, 39), #01021b);
-    --black: rgb(16, 16, 16);
+    --background-gradient: linear-gradient(to top right, rgb(6, 23, 49), rgb(2, 2, 39), #03051d);
+    --black: rgb(4, 1, 27);
     --white: #e2e2e2;
     --green: rgb(108,231,121);
     --blue1: rgb(71, 169, 255);
@@ -30,7 +30,7 @@
     --blue1: rgb(80, 172, 253);
     --blue2: rgb(35, 133, 252);
     --blue3: rgb(173, 217, 255);
-    --gray1: #47474750;
+    --gray1: #47474732;
     --gray2: #22222280;
     --wallpaper: linear-gradient(to top, rgb(235, 251, 208), rgb(173, 217, 255));
     --dashboard-background: none;

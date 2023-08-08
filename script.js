@@ -168,7 +168,7 @@ phoneApp.forEach((app) => {
 // carousel skill
 let row1 = document.querySelector('#about .myskill-bottom #row1')
 let row2 = document.querySelector('#about .myskill-bottom #row2')
-let skillList1 = ["ViewModel", "SharedPreference", "LiveData", "Notification", "ViewBinding", "NavigationComponents"]
+let skillList1 = ["ViewModel", "SharedPreference", "LiveData", "Notification", "ViewBinding", "Jetpack Compose"]
 let skillList2 = ["Room", "BroadcastReceiver", "Service", "Retrofit", "AlarmManager", "Coroutines"]
 let idL2 = 0, idL1 = 0
 let addSpanTime = 1800, removeSpanTime = 7800
