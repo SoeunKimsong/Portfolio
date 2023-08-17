@@ -1,7 +1,22 @@
 /* tablet */
 @media screen and (max-width: 1075px) {
+    main{
+        padding: 0 20px;
+    }
     #home .image{
         display: none;
+    }
+    #home .image #time{
+        font-size: 2.5em;
+    }
+    #home .name{
+        font-size: 3em;
+    }
+    #home .toptext{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     #home .in-tag{
         padding: 40px 0;
@@ -33,6 +48,10 @@
     #about .myskill-top{
         flex-direction: column;
     }
+    #about .status .num i{
+        font-size: 1.5em;
+    }
+
     #about .myskill-top .describe{
         width: 0%;
     }
@@ -88,7 +107,7 @@
 
 
 /* mobile phone */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
     *{
         font-size: .93em;
     }
@@ -161,13 +180,11 @@
         flex-direction: column;
         gap: 0px;
     }
-    #home .content .toptext{
-        width: max-content;
-        margin: auto;
-        font-size: 0.8em;
-    }
     #home .content .myname{
         font-size: 1em;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
     }
     #home .content .para{
         order: 4;
@@ -177,6 +194,8 @@
     }
     #home .content .image{
         order: 3;
+        width: 20vh;
+        height: 44vh;
     }
 
     #about .aboutme{
@@ -185,11 +204,12 @@
     }
     #about .content, #about .image{
         width: 80%;
+        height: 25vh;
     }
     
     #about .myskill{
-        width: 90%;
-        margin: 20px auto;
+        width: 80%;
+        padding: 0;
     }
     #about .myskill-top{
         width: 100%;
@@ -198,8 +218,7 @@
         margin-top: 0;
     }
     #about .myskill-top .describe p{
-        width: 220px;
-        margin-right: auto;
+        width: 100%;
     }
 
     #about .myskill-bottom .skill{
@@ -242,10 +261,11 @@
     }
 
     #project .app{
-        margin: 0;
+        margin: 20px 0;
     }
     #project .app-info{
         flex-wrap: wrap;
+        padding: 8px;
     }
     #project .app-info #app-logo{
         width: 20%;
