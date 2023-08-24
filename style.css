@@ -432,8 +432,10 @@ section{
     position: absolute;
     top: 0;
     width: 100%;
-    text-align: end;
     padding-right: 5px;
+}
+#home .image #service p{
+    text-align: end;
 }
 #home .image #service i{
     font-size: .5rem;
